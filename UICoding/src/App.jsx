@@ -1,4 +1,4 @@
-import JobsBoard from "./GFE75/JobsBoard";
+import JobsBoard from "./GFE75/JobsBoard/JobsBoard";
 
 function App() {
   return (
