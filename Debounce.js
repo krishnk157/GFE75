@@ -1,18 +1,12 @@
-export default function deepClone(value) {
-  if (Array.isArray(value)) {
-    return value.map((val) => deepClone(val)); // iterate through array items (can, be primitive,objs,nulls, arrays)
-  } else if (typeof value === "object" && value !== null) {
-    let res = { ...value }; // if value is object, shallow copy
-    for (let key in res) {
-      if (Object.hasOwn(res, key)) {
-        let objValue = res[key];
-        if (typeof objValue === "object") {
-          res[key] = deepClone(objValue);
-        }
-      }
+export default function debounce(func, wait) {
+  let timerId;
+  return function (...args) {
+    if (timerId) {
+      clearTimeout(timerId);
     }
-    return res;
-  } else {
-    return value; // if value is primitive
-  }
+    let context = this;
+    timerId = setTimeout(() => {
+      func.apply(context, args);
+    }, wait);
+  };
 }
