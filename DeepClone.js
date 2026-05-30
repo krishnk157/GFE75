@@ -13,6 +13,6 @@ export default function deepClone(value) {
     }
     return res;
   } else {
-    return value; // if value is primitive
+    return value; // if value is primitive or null
   }
 }
