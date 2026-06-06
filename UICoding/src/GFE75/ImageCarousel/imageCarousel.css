@@ -1,0 +1,82 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.image-carousel {
+  background-color: #000;
+  height: 400px;
+  overflow: hidden;
+  width: min(600px, 100vw);
+  position: relative;
+}
+
+.image-carousel--img {
+  object-fit: contain;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-carousel-btn {
+  --size: 40px;
+  height: var(--size);
+  width: var(--size);
+  background-color: #0008;
+  border-radius: 100%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev-btn {
+  left: 16px;
+}
+
+.next-btn {
+  right: 16px;
+}
+
+.image-carousel-pages {
+  background-color: #0008;
+  border-radius: 12px;
+  display: inline-flex;
+  gap: 8px;
+  padding: 8px;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-carousel-pages-btn {
+  --size: 8px;
+  height: var(--size);
+  width: var(--size);
+
+  border: none;
+  border-radius: 100%;
+  background-color: #666;
+  cursor: pointer;
+  display: inline-block;
+  flex-shrink: 0;
+  padding: 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.image-carousel-pages-btn:hover {
+  background-color: #ccc;
+}
+
+.image-carousel-pages-btn--active {
+  background-color: #fff;
+}

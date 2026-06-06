@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  display: grid;
+  gap: 10px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.btn-reset {
+  margin-top: 16px;
+  background-color: bisque;
+  width: 80px;
+  height: 50px;
+  font-size: 1rem;
+}
