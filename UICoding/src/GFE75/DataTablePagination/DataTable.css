@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+td,
+th {
+  padding: 4px;
+  border-bottom: 1px solid #ddd;
+  text-align: start;
+}
+
+th {
+  vertical-align: top;
+}
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.page-btn-controls {
+  display: flex;
+  gap: 10px;
+}
