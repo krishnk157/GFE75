@@ -27,11 +27,13 @@ export default function SnakeGame() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setSnakeBody((prevSnakeBody) => {
+        // move snake head as per direction
         const newHead = [
           prevSnakeBody[0][0] + directionRef.current[0],
           prevSnakeBody[0][1] + directionRef.current[1],
         ];
 
+        //reset snake
         if (
           newHead[0] < 0 ||
           newHead[0] >= GRID_SIZE ||
