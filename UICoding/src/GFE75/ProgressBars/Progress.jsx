@@ -9,7 +9,8 @@ function ProgressBar() {
       return;
     }
     setStartTransition(true);
-  });
+  }, []);
+
   return (
     <div className="progress-bar">
       <div
