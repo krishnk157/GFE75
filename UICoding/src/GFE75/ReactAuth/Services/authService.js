@@ -28,7 +28,7 @@ const getCurrentUser = () => {
 
 const getAuthToken = () => {
   const user = JSON.parse(localStorage.getItem("user"));
-  return user?.userDetails;
+  return user?.accessToken;
 };
 
 export default { login, logout, signup, getAuthToken, getCurrentUser };
