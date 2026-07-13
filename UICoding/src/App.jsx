@@ -5,6 +5,7 @@
 // import Stepper from "./GFE75/Counter/COunter";
 // import TimerApp from "./GFE75/MutipleTimers/MultipleTimers";
 // import CommentsApp from "./GFE75/NestedComments/CommentsApp";
+import AuthApp from "./GFE75/ReactAuth/AuthApp";
 import Game from "./GFE75/SnakeGame/Game";
 
 function App() {
@@ -21,7 +22,9 @@ function App() {
         onChange={console.log}
       /> */}
       {/* <CommentsApp /> */}
-      <Game />
+      <h1>Render</h1>
+      {/* <Game /> */}
+      <AuthApp />
     </>
   );
 }

@@ -46,6 +46,7 @@ export default function SnakeGame() {
           directionRef.current = [1, 0];
           return INITIAL_SNAKE;
         }
+
         const copySnakeBody = prevSnakeBody.map((arr) => [...arr]);
         if (
           newHead[0] === foodRef.current[0] &&
